@@ -79,4 +79,19 @@ private:
 
             current->next = newNode; // Step 9d: current.next = newNode
     }
+
+    void hapus()
+    {
+        if (start == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        cout << "\nEnter the roll number of the student whose recorf is to be deleted: ";
+        int rollNo;
+        cin >> rollNo;
+
+        Node *current = start;
+    }
 };
