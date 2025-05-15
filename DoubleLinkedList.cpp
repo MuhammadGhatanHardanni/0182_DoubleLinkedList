@@ -154,5 +154,25 @@ private:
             cout << "\nList is empty" << endl;
             return;
         }
+         // Step 1: Move to last node
+         Node *currentNode = start;
+         int i = 0;
+         while (currentNode->next != NULL)
+         {
+             currentNode = currentNode->next;
+             i++;
+         }
+ 
+         // Step 2: Traverse backward
+         cout << "\nRecords in descending order of roll number are:\n";
+         while (currentNode != NULL)
+         {
+            cout << i + 1 << ". " << currentNode->noMhs << " " << endl;
+
+            // step 3: move to previous node
+            currentNode = currentNode->prev;
+            i--;
+         }
+         
     }
 };
