@@ -146,4 +146,13 @@ private:
         }
         
     }
+
+    void revtraverse()
+    {
+        if (start == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+    }
 };
