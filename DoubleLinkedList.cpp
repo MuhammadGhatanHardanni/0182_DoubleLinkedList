@@ -125,4 +125,13 @@ private:
         delete current;
         cout << "Record with roll number " << rollNo << " deleted" << endl;
     }
+
+    void traverse(){
+        if (start == NULL)
+        {
+            cout << "\nList is Empty" << endl;
+            return;
+        }
+        
+    }
 };
